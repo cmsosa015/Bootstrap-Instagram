@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Bootstrap Instagram</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light d-flex fixed-top justify-content border border-muted">
+        <div class="container">
+            <span> <i class="fab fa-instagram"></i> Instagram</span>
+            <span>
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create New Post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <div class="input-group">
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                    </div>
+                                    <div> <button type="button"
+                                            class="btn btn-light btn-sm btn btn-outline-secondary mt-2"> <i
+                                                class="fas fa-camera "></i></button>
+                                        <button type="button"
+                                            class="btn btn-light btn-sm btn btn-outline-secondary mt-2"><i
+                                                class="fas fa-map-marker-alt"></i></button> </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" aria-pressed="true" class="btn btn-outline-secondary"
+                                        data-dismiss="modal">Cancel</button>
+                                    <button type="button" aria-pressed="true" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                <span class="dropdown">
+                    <button class="btn btn-light btn-secondary dropdown-toggle btn-sm" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item border-bottom-0 border border-light" href="#">Logout</a></li>
+                    </ul>
+                </span>
+            </span>
+            <!-- modal -->
+        </div>
+    </nav>
+
+    <div>
+        <ul class="nav nav-pills mt-5 pt-3 justify-content-center " id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class=" btn btn-light btn-sm" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true"><i class="fas fa-th"></i></button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="btn btn-light btn-sm" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false"><i class="fas fa-square"></i></button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content pt-2" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 p-1 ">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/564x/e2/56/e8/e256e8e46e5a382e33ab83ed84d4fdc5.jpg" alt="">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/236x/96/ba/ca/96baca50cc9cea7b233020731ee19ee9.jpg" alt="">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/564x/ce/7a/47/ce7a47ef0baa23b2959414d9ee90d038.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row d-flex flex-row">
+                    <div class="col-4 p-1 ">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/564x/0d/cd/a7/0dcda7a3afcdc67ecd2045a8bb8d271e.jpg" alt="">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/236x/4d/11/65/4d11659343e473b08a220eb9f457649d.jpg" alt="">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/236x/67/f4/64/67f464406a51614f657a1a036fe33ca4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row d-flex flex-row">
+                    <div class="col-4 p-1 ">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/236x/0c/c9/02/0cc902753bd8be457bb8f6a4d5fc4d5e.jpg" alt="">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/564x/21/50/4d/21504d91229922bf036bd1557f9cef02.jpg" alt="">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img width="100%" height=400px
+                            src="https://i.pinimg.com/236x/5f/f9/1b/5ff91b9763d2c542f191ce614dede6eb.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         
+        <div class="tab-pane fade bg-light" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row justify-content-center">
+                <div class="flex-column col-5 m-3 ">
+                    <div class="card">
+                        <div class="card-header bg-transparent border-light d-flex justify-content-between">My First
+                            Photo
+                            <span style="color: grey;">12/14</span></div>
+                        <figure class="figure">
+                            <img src="https://i.pinimg.com/564x/21/50/4d/21504d91229922bf036bd1557f9cef02.jpg"
+                                width="100%" height="500px" class="figure-img rounded"
+                                alt="A generic square placeholder image with rounded corners in a figure.">
+                            <div class="card-footer border-white bg-white ps-2"><b> 23 likes</b></div>
+                            <div class="ps-2 pe-2"> <span>This is my first photo of the feed. This is a multi-line
+                                    comment for testing purposes. I am learning to code with #BreatheCode.</span></div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="p-3 pb-0 text-muted"><i class="far fa-heart me-3"></i>
+                                    <span>Comment...</span> </div>
+                                <div class="p-3 pb-0 text-muted"><i class="fas fa-ellipsis-v me-2"></i></div>
+                            </div>
+                    </div>
+                    <div class="card mt-3 mb-3">
+                        <div class="card-header bg-transparent border-light d-flex justify-content-between">My First
+                            Photo
+                            <span style="color: grey;">12/14</span></div>
+                        <figure class="figure">
+                            <img src="https://i.pinimg.com/236x/67/f4/64/67f464406a51614f657a1a036fe33ca4.jpg"
+                                width="100%" height="500px" class="figure-img rounded"
+                                alt="A generic square placeholder image with rounded corners in a figure.">
+
+                            <div class="card-footer border-white bg-white ps-2"><b> 23 likes</b></div>
+                            <div class="ps-2 pe-2"> <span>This is my first photo of the feed. This is a multi-line
+                                    comment for testing purposes. I am learning to code with #BreatheCode.</span></div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="p-3 pb-0 text-muted"><i class="far fa-heart me-3"></i>
+                                    <span>Comment...</span> </div>
+                                <div class="p-3 pb-0 text-muted"><i class="fas fa-ellipsis-v me-2"></i></div>
+                            </div>
+                    </div>
+                    <div class="card mt-3 mb-3">
+                        <div class="card-header bg-transparent border-light d-flex justify-content-between">My First
+                            Photo
+                            <span style="color: grey;">12/14</span></div>
+                        <figure class="figure">
+                            <img src="https://i.pinimg.com/564x/ce/7a/47/ce7a47ef0baa23b2959414d9ee90d038.jpg"
+                                width="100%" height="500px" class="figure-img rounded"
+                                alt="A generic square placeholder image with rounded corners in a figure.">
+
+                            <div class="card-footer border-white bg-white ps-2"><b> 23 likes</b></div>
+                            <div class="ps-2 pe-2"> <span>This is my first photo of the feed. This is a multi-line
+                                    comment for testing purposes. I am learning to code with #BreatheCode.</span></div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="p-3 pb-0 text-muted"><i class="far fa-heart me-3"></i>
+                                    <span>Comment...</span> </div>
+                                <div class="p-3 pb-0 text-muted"><i class="fas fa-ellipsis-v me-2"></i></div>
+                            </div>
+                    </div>
+                    <div class="card mt-3 mb-3">
+                        <div class="card-header bg-transparent border-light d-flex justify-content-between">My First
+                            Photo
+                            <span style="color: grey;">12/14</span></div>
+                        <figure class="figure">
+                            <img src="https://i.pinimg.com/236x/4d/11/65/4d11659343e473b08a220eb9f457649d.jpg"
+                                width="100%" height="500px" class="figure-img rounded"
+                                alt="A generic square placeholder image with rounded corners in a figure.">
+
+                            <div class="card-footer border-white bg-white ps-2"><b> 23 likes</b></div>
+                            <div class="ps-2 pe-2"> <span>This is my first photo of the feed. This is a multi-line
+                                    comment for testing purposes. I am learning to code with #BreatheCode.</span></div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="p-3 pb-0 text-muted"><i class="far fa-heart me-3"></i>
+                                    <span>Comment...</span> </div>
+                                <div class="p-3 pb-0 text-muted"><i class="fas fa-ellipsis-v me-2"></i></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
